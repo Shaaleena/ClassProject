@@ -1,0 +1,310 @@
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+header {
+  width: 100%;
+  position: sticky;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #264348;
+}
+
+ul{
+    list-style-type: none;
+    float: right;
+}
+
+nav ul li {
+  float: left;
+}
+#logo{
+  float: left;
+  height: 80px;
+  width: 80px;
+
+
+}
+
+.nav li a {
+  display:block;
+  color: #fefefa;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+#dropmenu{
+  display: none;
+}
+#main{
+   margin: auto;
+   width: 80%;
+   overflow: auto;
+   padding: 10px;
+
+}
+.sidecontent{
+  width: 50%;
+  margin-top: 20%;
+}
+
+#text{
+  margin-top: 10%;
+  font-family:serif;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.phrase{
+  font-family: sans-serif;
+  opacity: 0.8;
+}
+
+.author{
+  opacity: 0.8;
+  font-style: italic;
+  margin-left: 20%;
+}
+
+.puppy{
+  margin: 5% 3%;
+  float: right;
+  width: 50%;
+
+}
+button{
+  margin-top: 10px;
+  margin-left: 10%;
+  background-color:  #cc4e5c;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #eedc82;
+  overflow: hidden;
+  width: 100%;
+}
+
+.social{
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 1%;
+}
+.social li{
+  float: left;
+  padding-left:5px;
+}
+.privacy{
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 1%;
+}
+.copy{
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 1%;
+}
+
+.main_2{
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.col{
+  width: 29.3%;
+  height: auto;
+  float: left;
+  text-align: center;
+  padding: 1%;
+
+}
+.col_1, .col_3, .col_2{
+  background-color: #fefefa;
+  margin: 1%;
+  border-radius: 8px;
+}
+.img1{
+  border-radius: 8px;
+  width: 100%;
+  height: 400px;
+  background-image: url('media/meritt-thomas-dAEVb8PkYyQ-unsplash.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.img2{
+  border-radius: 8px;
+  width: 100%;
+  height: 400px;
+  background-image: url('media/carren-slim-main-538x350.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.img3{
+  border-radius: 8px;
+  width: 100%;
+  height: 400px;
+  background-image: url('media/dog-getting-pet-2033478.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+h2{
+  opacity: 0.8;
+  font: sans-serif;
+}
+
+.text_awards{
+  text-align: left;
+  opacity: 0.7;
+  font: serif;
+
+}
+.main3{
+  margin: 5% 8%;
+ overflow: hidden;
+}
+h1{
+  opacity: 0.8;
+}
+.about_img{
+  width: 100%;
+
+}
+
+.about_img2{
+  float: right;
+  width: 40%;
+  margin: auto 3%;
+}
+.text_about{
+  text-align: left;
+  opacity: 0.7;
+  font: serif;
+  font-size: 1.5em;
+}
+.btnsend{
+  margin-left: auto;
+}
+
+
+
+
+
+
+
+
+/* Responsove Design*/
+
+@media screen and (max-width: 800px) {
+
+  body{
+    margin: 0;
+    position: relative;
+    padding-bottom: 6rem;
+    min-height: 100%;
+  }
+header, footer{
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+ul{
+  float: none;
+}
+  .nav li{
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  .nav li a{
+    text-align: center;
+
+  }
+  #logo{
+    float: none;
+    margin-left: 46%;
+  }
+
+ #main{
+   max-width: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-flow: column;
+ }
+
+  .puppy{
+    width: 100%;
+    float: none;
+    margin: 0;
+    order: 2;
+  }
+
+  .sidecontent{
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+
+  }
+  #text{
+    text-align: left;
+    width: 80%;
+    padding-left: 10%;
+    font-size: 18px;
+    order: 3;
+
+  }
+   button{
+     margin-left: 0;
+     order: 4;
+     width: 40%;
+     margin-left: 25%;
+   }
+   .col{
+     width: 90%;
+     margin-left: 5%;
+   }
+   .text_awards
+   {
+     font-size: 1.3em;
+   }
+   .about_img2{
+     width: 100%;
+     margin: 3% 3%;
+   }
+   .text_about{
+     margin-top: 3%;
+   }
+   .form{
+     width: 100%;
+     margin: auto 20%;
+   }
+   .btnsend{
+     margin-left: 10%;
+     width: 20%;
+   }
+}
