@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--Alina Sharafutdinova, 03/19/2020-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Hall of Fame</title>
+    <link rel="stylesheet" type="text/css" href="dogframe02style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="media/New Project-2.jpg" id= "logo" alt="logo for Dog Hall of Fame" height="40" width="40"></a>
+
+    <nav>
+    <ul class="nav">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="awards.html" >AWARDS</a></li>
+      <li><a href="community.html">COMMUNITY</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+      <li><a href="login.html">LOG IN</a></li>
+    </ul>
+    </nav>
+    </header>
+
+    <div id="main">
+    <h1>REGISTER </h1>
+    <form id="register">
+    <div class="container-reg">
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    <label for="fname"><b>First Name</b> </label>
+    <input type="text" id="fname" class="formsreg" name="fname" placeholder="Your First Name" required><br>
+
+    <label for="lname"><b>Last Name </b></label>
+    <input type="text" id="lname" class="formsreg" name="lname" placeholder="Your Last Name" required><br>
+
+    <label for="pet"><b>Dog's Name</b></label>
+    <input type="text" class="formsreg" placeholder="Dog's Name" name="dog">
+    <label for="breed"><b>Breed</b></label>
+    <input type="text" class="formsreg" placeholder="Breed" name="breed">
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" class="formsreg" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="text" class="formsreg" placeholder="Enter Password" name="psw" required>
+
+    <label for="repeat-psw"><b>Repeat Password</b></label>
+    <input type="text" class="formsreg" placeholder="Re-enter Password" name="psw" required>
+
+
+    <hr>
+    <p>Already a member? <a href="login.html">Log In</a>.</p>
+    <button type="submit" class="registerbtn">REGISTER</button>
+    <button type="reset" class="registerbtn" name="button">RESET</button>
+  </div>
+
+</form>
+
+    </div> <!--end main-->
+
+
+    <footer>
+      <div class="privacy">
+        <a href="#"><p>PRIVACY POLICY</p></a>
+      </div>
+      <div class="social">
+      <ul>
+        <li>FOLLOW US</li> <!--links to the social media-->
+        <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+
+        <li><a  href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+
+      </ul>
+    </div>
+    <div class="copy">
+      <p> &copy Dog Hall of Fame, 2020</p>
+    </div>
+    </footer>
+  </body>
+</html>
