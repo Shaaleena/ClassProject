@@ -24,20 +24,26 @@
     </nav>
     </header>
 
-    <div id="main">
+    <div id="main" class="main-login">
+      <form action="/action_page.php" method="post">
 
-      <img src="media/jack-brind-rmvG_oHzCNA-unsplash.jpg" class="puppy" alt="logo for Dog Hall of Fame" >
+  <div class="container">
 
-      <div class="sidecontent">
-        <h1 class="phrase">“A dog has one aim in life... to bestow his heart.” </h1>
-        <h2 class="author">― J. R. Ackerley.</h2>
+    <label for="email"><b>Email</b></label>
+    <input type="text" class="formsreg" placeholder="Enter Email" name="email" required>
 
-      </div>
+    <label for="psw"><b>Password</b></label>
+    <input type="text" class="formsreg" placeholder="Enter Password" name="psw" required>
 
-      <p id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <button type="submit" class="registerbtn">REGISTER</button>
+    <button type="reset" class="registerbtn" name="button">RESET</button>
 
-      <a href="member.html" id="become"><button type="button">BECOME A MEMBER</button></a><!--button that will transfer to the sign in page-->
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
 
+</form>
     </div> <!--end main-->
 
 

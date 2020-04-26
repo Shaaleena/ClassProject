@@ -26,9 +26,17 @@ nav ul li {
 #logo{
   float: left;
   height: 80px;
-  width: 80px;
+  width: auto;
 
 
+
+
+
+
+}
+video{
+  width: 100%;
+  margin-bottom: 3%;
 }
 
 .nav li a {
@@ -76,7 +84,18 @@ nav ul li {
   margin: 5% 3%;
   float: right;
   width: 50%;
+  animation-name: heroimage;
+  animation-duration:2s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
 
+}
+@keyframes heroimage {
+  0%{filter: opacity(0.5);}
+  25%{filter: opacity(0.6);}
+  50%{filter: opacity(0.7);}
+  75%{filter: opacity(0.8);}
+  100%{filter: opacity(1);}
 }
 button{
   margin-top: 10px;
@@ -90,6 +109,7 @@ button{
   text-decoration: none;
   display: inline-block;
   font-size: 10px;
+  cursor: pointer;
 }
 
 footer {
@@ -107,6 +127,7 @@ footer {
   width: 50%;
   text-align: center;
   padding: 1%;
+  color: #444444;
 }
 .social li{
   float: left;
@@ -118,11 +139,33 @@ footer {
   text-align: center;
   padding: 1%;
 }
+.social li a{
+display: block;
+width: 25px;
+height: 25px;
+cursor: pointer;
+background-color:  #555555;
+border-radius: 5px;
+
+font-size: 20px;
+color: #fefefa;
+text-align: center;
+line-height: 25px;
+
+margin-right: 5px;
+margin-bottom: 5px;
+}
+.privacy a {
+  text-decoration: none;
+  color: #444444;
+
+}
 .copy{
   float: left;
   width: 20%;
   text-align: center;
   padding: 1%;
+  color: #444444;
 }
 
 .main_2{
@@ -144,7 +187,6 @@ footer {
   border-radius: 8px;
 }
 .img1{
-  border-radius: 8px;
   width: 100%;
   height: 400px;
   background-image: url('media/meritt-thomas-dAEVb8PkYyQ-unsplash.jpg');
@@ -153,7 +195,6 @@ footer {
   background-position: center;
 }
 .img2{
-  border-radius: 8px;
   width: 100%;
   height: 400px;
   background-image: url('media/carren-slim-main-538x350.jpg');
@@ -162,7 +203,6 @@ footer {
   background-position: center;
 }
 .img3{
-  border-radius: 8px;
   width: 100%;
   height: 400px;
   background-image: url('media/dog-getting-pet-2033478.jpg');
@@ -207,11 +247,101 @@ h1{
 .btnsend{
   margin-left: auto;
 }
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 3% auto;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+button[type=submit] {
+  background-color: #cc7458;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button[type=reset] {
+  background-color: #cc7458;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #dea593;
+}
+button[type=reset]:hover {
+  background-color: #dea593;
+}
+.registerbtn {
+  margin-left: auto;
+  width: 100px;
+}
+form {
+  border-radius: 5px;
+
+  padding: 20px;
+  width: 60%;
+  margin:5% 20%;
+}
+
+#register{
+  margin: 0;
+  padding: 0;
+  width: 60%;
+}
+/* Add padding to containers */
+.container-reg {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[class="formsreg"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 4px;
+}
+button:focus{
+  outline: none;
+}
+.main-login{
+  height: 100vh;
+}
 
 
-
-
-
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
 
 
 
@@ -247,7 +377,7 @@ ul{
   }
   #logo{
     float: none;
-    margin-left: 46%;
+    margin-left: 43%;
   }
 
  #main{
@@ -263,6 +393,7 @@ ul{
     margin: 0;
     order: 2;
   }
+
 
   .sidecontent{
     margin-top: 0;
@@ -280,9 +411,11 @@ ul{
   }
    button{
      margin-left: 0;
-     order: 4;
      width: 40%;
      margin-left: 25%;
+   }
+   #become{
+     order: 4;
    }
    .col{
      width: 90%;
@@ -299,12 +432,51 @@ ul{
    .text_about{
      margin-top: 3%;
    }
-   .form{
+   form{
      width: 100%;
-     margin: auto 20%;
+     margin: 0;
+     padding: 0;
+
    }
    .btnsend{
      margin-left: 10%;
      width: 20%;
    }
+   table, tbody, th, td, tr {
+    display: block;
+  }
+  .categ{
+    display: none;
+  }
+  tr { border: 1px solid #ccc; }
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 100px;
+    margin-left: 150px;
+  }
+  td:before {
+    position: absolute;
+    top: 12px;
+    left: 6px;
+    width: 200px;
+    padding-right: 40px;
+    white-space: nowrap;
+    margin-left: -150px;
+  }
+  td:nth-of-type(1):before { content: "Category"; }
+  td:nth-of-type(2):before { content: "Name"; }
+  td:nth-of-type(3):before { content: "Breed"; }
+  td:nth-of-type(4):before { content: "Owner";}
+  td:nth-of-type(5):before { content: "Location";}
+}
+#register{
+   width: 100%;
+}
+
+
+
+}
+
 }

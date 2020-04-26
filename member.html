@@ -25,18 +25,39 @@
     </header>
 
     <div id="main">
+    <h1>REGISTER </h1>
+    <form id="register">
+    <div class="container-reg">
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    <label for="fname"><b>First Name</b> </label>
+    <input type="text" id="fname" class="formsreg" name="fname" placeholder="Your First Name" required><br>
 
-      <img src="media/jack-brind-rmvG_oHzCNA-unsplash.jpg" class="puppy" alt="logo for Dog Hall of Fame" >
+    <label for="lname"><b>Last Name </b></label>
+    <input type="text" id="lname" class="formsreg" name="lname" placeholder="Your Last Name" required><br>
 
-      <div class="sidecontent">
-        <h1 class="phrase">“A dog has one aim in life... to bestow his heart.” </h1>
-        <h2 class="author">― J. R. Ackerley.</h2>
+    <label for="pet"><b>Dog's Name</b></label>
+    <input type="text" class="formsreg" placeholder="Dog's Name" name="dog">
+    <label for="breed"><b>Breed</b></label>
+    <input type="text" class="formsreg" placeholder="Breed" name="breed">
 
-      </div>
+    <label for="email"><b>Email</b></label>
+    <input type="text" class="formsreg" placeholder="Enter Email" name="email" required>
 
-      <p id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <label for="psw"><b>Password</b></label>
+    <input type="text" class="formsreg" placeholder="Enter Password" name="psw" required>
 
-      <a href="member.html" id="become"><button type="button">BECOME A MEMBER</button></a><!--button that will transfer to the sign in page-->
+    <label for="repeat-psw"><b>Repeat Password</b></label>
+    <input type="text" class="formsreg" placeholder="Re-enter Password" name="psw" required>
+
+
+    <hr>
+    <p>Already a member? <a href="login.html">Log In</a>.</p>
+    <button type="submit" class="registerbtn">REGISTER</button>
+    <button type="reset" class="registerbtn" name="button">RESET</button>
+  </div>
+
+</form>
 
     </div> <!--end main-->
 

@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="dogframe02style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body>
     <header>
-        <img src="media/45326177-dog-pet-logo-design-template-for-label-banner-badge-logo-or-coat-of-arms-.jpg" id= "logo" alt="logo for Dog Hall of Fame" height="40" width="40">
+        <a href="index.html"><img src="media/New Project-2.jpg" id= "logo" alt="logo for Dog Hall of Fame" height="40" width="40"></a>
 
     <nav>
     <ul class="nav">
@@ -16,7 +18,7 @@
       <li><a href="awards.html">AWARDS</a></li>
       <li><a href="community.html">COMMUNITY</a></li>
       <li><a href="contact.html">CONTACT</a></li>
-      <li><a href="#">LOG IN</a></li>
+      <li><a href="login.html">LOG IN</a></li>
     </ul>
     </nav>
     </header>
@@ -28,10 +30,19 @@
         <input type="text" id="name" name="name" value="Your name"><br>
         <label for="email">Your E-mail: </label>
         <input type="text" id="email" name="email" value="Your e-mail"><br>
+        <label for="subject">Subject:</label><br>
+        <select id="subject" name="subject">
+        <option value="mem">Membership</option>
+        <option value="reg">Registration</option>
+        <option value="gen">General Question</option>
+        <option value="tech">Technical Issue</option>
+      </select><br>
+        <label for="message">Your Message:</label><br>
         <textarea name="message" rows="10" cols="30">
-          ...
+
         </textarea><br>
-        <button type="button" class="btnsend" name="button">SEND</button>
+        <button type="submit" class="btnsend" name="button">SEND</button>
+        <button type="reset" class="btnsend" name="button">RESET</button>
       </form>
     </div>
     <footer>
@@ -41,9 +52,10 @@
       <div class="social">
       <ul>
         <li>FOLLOW US</li> <!--links to the social media-->
-        <li><a href="#"><img class="icon facebook" src="media/iconfinder_1_Facebook2_colored_svg_5296500.png" alt="Facebook Page"></a></li>
-        <li><a  href="#"><img class="icon instagram" src="media/iconfinder_1_Instagram_colored_svg_1_5296765.png" alt="Instagram Profile"></a></li>
-        <li><a href="#"><img class="icon youtube" src="media/iconfinder_1_Youtube_colored_svg_5296521.png" alt="Yotube Channel"></a></li>
+        <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        <li><a  href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+
       </ul>
     </div>
     <div class="copy">
